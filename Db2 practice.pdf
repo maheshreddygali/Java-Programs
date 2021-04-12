@@ -1,0 +1,83 @@
+create table table_college(name varchar(25), rollno int, aggre int);
+insert into table_college values ('satya', 24, 7);
+insert into table_college values ('divya', 26, 8);
+insert into table_college(name,rollno,aggre) values('ramya',25,9);
+alter table table_college add location varchar(30);
+alter table table_college drop column location;
+update table_college set rollno=26 where name='ramya';
+delete from table_college where aggre=7;
+
+--create table datastud(id int not null primary key, sname varchar(10), no int);
+--insert into datastud values(101, 'satya',98);
+--insert into datastud values(102, 'nandu',89);
+--insert into datastud values(102, 'ramya',56);
+--insert into datastud values(104, 'devi',45);
+
+
+--create table stud_ab(empid int, name varchar(10), foreign key(empid) references datastu(id));
+--insert into stud_ab values(101, 'sam');
+--insert into stud_ab values(102, 'hindu');
+--insert into stud_ab values(104, 'manija');
+--delete from datastud where id=102;
+--select * from datastud;
+--select * from stud_ab;
+
+--create table salary1 (id int, sal int not null);
+--insert into salary1 values(1, 1500);
+--insert into salary1 values(2, 2500);
+--insert into salary1 values(3, 1800);
+--insert into salary1 values(4, 1900);
+--insert into salary1 values(5, 3500);
+--insert into salary1 values(6, 2600);
+
+--create table salary2 (sid int, salary int);
+--insert into salary2 values(1, 4000);
+--insert into salary2 values(2, 2900);
+--insert into salary2 values(3, 3000);
+--insert into salary2 values(4, 1100);
+--insert into salary2 values(5, 1500);
+--insert into salary2 values(6, 2400);
+
+--select salary+500 from salary2;
+
+--te table datastud(id int not null primary key, sname varchar(10), no int);
+--insert into datastud values(101, 'satya',98);
+--insert into datastud values(102, 'nandu',89);
+--insert into datastud values(102, 'ramya',56);
+--insert into datastud values(104, 'devi',45);
+
+
+--create table stud_ab(empid int, name varchar(10), foreign key(empid) references datastu(id));
+--insert into stud_ab values(101, 'sam');
+--insert into stud_ab values(102, 'hindu');
+--insert into stud_ab values(104, 'manija');
+--delete from datastud where id=102;
+--select * from datastud;
+--select * from stud_ab;
+
+--create table salary1 (id int, sal int not null);
+--insert into salary1 values(1, 1500);
+--insert into salary1 values(2, 2500);
+--insert into salary1 values(3, 1800);
+--insert into salary1 values(4, 1900);
+--insert into salary1 values(5, 3500);
+--insert into salary1 values(6, 2600);
+                                       
+--select * from salary1 where sal<2000;
+
+--select salary+500 from salary2;
+
+--select * from datastud where sname like 's%';
+
+--select sid,salary from salary2 where salary between 1000 and 2500;
+
+--select distinct sid from salary2;
+
+--select id,sname from datastu where no<80 order by sname; 
+
+--select salary from salary2 where sid=4 union select salary from salary2 where sid=6;
+
+--select * from salary1 union select * from salary2;
+
+--insert into salary2 values(3,1800);
+
